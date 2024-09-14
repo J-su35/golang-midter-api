@@ -2,10 +2,10 @@ package main
 
 import (
 	"context"
-	"disbursement-api/internal/auth"
-	"disbursement-api/internal/item"
-	"disbursement-api/internal/user"
 	"log"
+	"midterm-api/internal/auth"
+	"midterm-api/internal/item"
+	"midterm-api/internal/user"
 	"net/http"
 	"os"
 	"os/signal"
