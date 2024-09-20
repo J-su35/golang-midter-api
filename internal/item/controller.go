@@ -73,6 +73,7 @@ func (controller Controller) CreateItem(ctx *gin.Context) {
 	ctx.JSON(http.StatusCreated, gin.H{
 		"data": item,
 	})
+	// ctx.JSON(http.StatusCreated, item)
 }
 
 func (controller Controller) FindItems(ctx *gin.Context) {
@@ -95,6 +96,7 @@ func (controller Controller) FindItems(ctx *gin.Context) {
 	ctx.JSON(http.StatusOK, gin.H {
 		"data": items,
 	})
+	// ctx.JSON(http.StatusOK, items)
 }
 
 func (controller Controller) UpdateItemStatus(ctx *gin.Context) {
@@ -123,6 +125,7 @@ func (controller Controller) UpdateItemStatus(ctx *gin.Context) {
     ctx.JSON(http.StatusOK, gin.H{
         "data": item,
     })
+	// ctx.JSON(http.StatusOK, item)
 }
 
 func (controller Controller) FindItemById(ctx *gin.Context) {
@@ -147,6 +150,7 @@ func (controller Controller) FindItemById(ctx *gin.Context) {
 	ctx.JSON(http.StatusOK, gin.H {
 		"data": items,
 	})
+	// ctx.JSON(http.StatusOK, items)
 }
 
 func (controller Controller) DeleteItemById(ctx *gin.Context) {
@@ -174,6 +178,7 @@ func (controller Controller) DeleteItemById(ctx *gin.Context) {
     ctx.JSON(http.StatusOK, gin.H{
         "data": item,
     })
+	// ctx.JSON(http.StatusNoContent, item)
 }
 
 func (controller Controller) ReplaceItem(ctx *gin.Context) {
@@ -208,4 +213,5 @@ func (controller Controller) ReplaceItem(ctx *gin.Context) {
 	ctx.JSON(http.StatusOK, gin.H {
 		"data": item,
 	})
+	// ctx.JSON(http.StatusOK, item)
 }

@@ -3,7 +3,8 @@ package main
 import (
 	"context"
 	"log"
-	"midterm-api/internal/auth"
+
+	// "midterm-api/internal/auth"
 	"midterm-api/internal/item"
 	"midterm-api/internal/user"
 	"net/http"
@@ -52,7 +53,7 @@ func main() {
 
 	//Register router
 	items := r.Group("/items")
-	items.Use(auth.Guard(os.Getenv("JWT_SECRET")))
+	// items.Use(auth.Guard(os.Getenv("JWT_SECRET")))
 	{
 		items.POST("", controller.CreateItem)
 		items.GET("", controller.FindItems)
