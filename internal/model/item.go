@@ -9,7 +9,6 @@ type Item struct {
 	Quantity uint `json:"quantity"`
 	Status   constant.ItemStatus `json:"status"`
 }
-
 type BaseResponse[DataType any] struct {
 	Message string   `json:"message,omitempty"`
 	Data    DataType `json:"data,omitempty"`
